@@ -646,8 +646,10 @@ h3 {
     width: calc(100% - 1rem);
     margin-top: 0.5rem;
     padding: 0.55rem;
+    border-color: rgba(23, 18, 15, 0.72);
     border-radius: 22px;
-    box-shadow: 5px 5px 0 rgba(23, 18, 15, 0.12);
+    background: rgba(255, 253, 248, 0.94);
+    box-shadow: 4px 4px 0 rgba(216, 58, 46, 0.18);
   }
 
   .brand {
@@ -666,7 +668,16 @@ h3 {
 
   .site-header nav a {
     padding: 0.55rem 0.45rem;
+    border: 1px solid rgba(23, 18, 15, 0.1);
+    background: rgba(255, 247, 231, 0.7);
     font-size: 0.86rem;
+  }
+
+  .site-header nav a:hover,
+  .site-header nav .nav-cta {
+    border-color: var(--red);
+    color: var(--white) !important;
+    background: var(--red);
   }
 
   .hero {
@@ -716,11 +727,11 @@ h3 {
     width: 100%;
     min-height: 50px;
     padding: 0.8rem 1rem;
-    box-shadow: 4px 4px 0 var(--ink);
+    box-shadow: 4px 4px 0 rgba(23, 18, 15, 0.55);
   }
 
   .button:hover {
-    box-shadow: 2px 2px 0 var(--ink);
+    box-shadow: 2px 2px 0 rgba(23, 18, 15, 0.55);
     transform: translate(2px, 2px);
   }
 
@@ -730,8 +741,10 @@ h3 {
 
   .hero-card {
     padding: 1rem;
+    border-color: rgba(23, 18, 15, 0.78);
     border-radius: 26px;
-    box-shadow: 8px 8px 0 var(--ink);
+    background: linear-gradient(180deg, var(--white) 0%, #fff1c8 100%);
+    box-shadow: 7px 7px 0 rgba(216, 58, 46, 0.22);
   }
 
   .hero-card::after {
@@ -804,7 +817,11 @@ h3 {
 
   .book-card {
     padding: 0.9rem;
-    box-shadow: 7px 7px 0 rgba(23, 18, 15, 0.9);
+    border-color: rgba(23, 18, 15, 0.78);
+    background:
+      radial-gradient(circle at 12% 0, rgba(255, 210, 74, 0.18), transparent 12rem),
+      var(--white);
+    box-shadow: 7px 7px 0 rgba(216, 58, 46, 0.2);
   }
 
   .book-card::before {
@@ -848,17 +865,45 @@ h3 {
   }
 
   .note-card {
-    box-shadow: -6px 6px 0 var(--red);
+    border-color: rgba(23, 18, 15, 0.78);
+    background:
+      radial-gradient(circle at 100% 0, rgba(255, 210, 74, 0.42), transparent 11rem),
+      var(--white);
+    color: var(--ink);
+    box-shadow: -6px 6px 0 rgba(216, 58, 46, 0.22);
     transform: none;
+  }
+
+  .note-card span {
+    border-color: var(--red);
+    color: var(--red-dark);
+    background: rgba(255, 210, 74, 0.36);
   }
 
   .note-card h3 {
     font-size: clamp(2.6rem, 13vw, 4rem);
   }
 
+  .note-card p {
+    color: var(--muted);
+  }
+
   .final-cta {
     margin-bottom: 2.5rem;
-    box-shadow: 8px 8px 0 var(--ink);
+    border-color: rgba(23, 18, 15, 0.78);
+    color: var(--ink);
+    background:
+      radial-gradient(circle at 20% 0, rgba(255, 210, 74, 0.34), transparent 16rem),
+      linear-gradient(135deg, #fffdf8 0%, #fff1c8 100%);
+    box-shadow: 8px 8px 0 rgba(216, 58, 46, 0.22);
+  }
+
+  .final-cta .section-kicker {
+    color: var(--red-dark);
+  }
+
+  .final-cta p {
+    color: var(--muted);
   }
 }
 
