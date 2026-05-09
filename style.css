@@ -268,6 +268,7 @@ h3 {
 
 .stamp {
   position: absolute;
+  z-index: 2;
   top: 1.3rem;
   right: -0.7rem;
   padding: 0.35rem 0.8rem;
